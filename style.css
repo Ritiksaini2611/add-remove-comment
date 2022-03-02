@@ -218,56 +218,10 @@ form .signup-btn {
 
      display: block;
 
-     position: fixed;
-
      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .one {
-     width: 120px;
-     left: -5%;
-     top: 310px;
-     transition: all 1s ease-in-out;
-}
-
-.two {
-     width: 230px;
-     top: 230px;
-     transition: all 1s ease-in-out;
-}
-
-.three {
-     width: 320px;
-     left: 6%;
-     transition: all 1s ease-in-out;
-}
-
-.one:hover {
-     width: 320px;
-     transform: scale(1);
-     top: 180px;
-     z-index: 1;
-}
-.one:hover ~ .two {
-     left: 6%;
-}
-.one:hover ~ .three {
-     left: 8%;
-     top: 210px;
-     transform: scale(0.4);
-     z-index: -1;
-}
-
-.two:hover {
-     transform: scale(1.5);
-     left: 2.8%;
-     top: 210px;
-}
-.two:hover ~ .three {
-     left: 10%;
-     top: 210px;
-     transform: scale(0.4);
-     z-index: -1;
 }
 
 /* ----------------- comment section ---------------------- */
