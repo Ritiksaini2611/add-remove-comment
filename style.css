@@ -24,10 +24,11 @@ a {
 
 :root {
      --blue-light: #f8eee7;
-     --blue-dark: #94618e;
+     --blue-dark: #c59b76;
      --white-intr: #ffffff;
      --grey-blue: #ffffff;
      --greenish-blue: #f4decb;
+     --nav-txt-clr: #48321e;
      /* --blue-light: #c8d8e4;
      --blue-dark: #2b6777;
      --white-intr: #ffffff;
@@ -161,7 +162,7 @@ form .signup-btn {
      font-size: 1.2rem;
      text-decoration: none;
      margin: 0 5px;
-     color: var(--blue-dark);
+     color: var(--nav-txt-clr);
      margin: 0 1.5rem;
      transition: all 0.3s ease-in;
      width: fit-content;
