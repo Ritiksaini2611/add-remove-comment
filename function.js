@@ -1,5 +1,7 @@
 "use strict";
 
+var loggedin = false;
+
 // ------------ more options toogle functionality  --------------------------
 
 document
@@ -26,10 +28,14 @@ document.querySelector(".add-button").addEventListener("click", function () {
      if (!newCmnt) {
           alert("Please write a comment");
      } else {
-          var nowOldCmnt = newCmnt;
-          console.log(nowOldCmnt);
+          if (!loggedin) {
+               alert("you have to login to make a comment");
+          } else {
+               var nowOldCmnt = newCmnt;
+               console.log(nowOldCmnt);
 
-          document.querySelector(".input-cmnt").value = "";
+               document.querySelector(".input-cmnt").value = "";
+          }
      }
 });
 
