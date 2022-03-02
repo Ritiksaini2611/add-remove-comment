@@ -206,22 +206,21 @@ form .signup-btn {
 }
 
 .post-altr {
-     background-color: aqua;
-
      height: fit-content;
 
      margin: auto;
 }
 
 .post .post-altr img {
-     margin: 50px 70% auto 13%;
-
      display: block;
 
      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .one {
+     width: 400px;
+     display: block;
+     margin: 2rem auto;
 }
 
 /* ----------------- comment section ---------------------- */
