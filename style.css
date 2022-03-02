@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+
+body {
+     font-family: "Poppins", sans-serif;
+     font-size: 1.02rem;
+     font-weight: 300;
+     line-height: 1.6;
+}
+
+a {
+     text-decoration: none;
+}
+
+.show-hidden {
+     display: none;
+}
+
+:root {
+     --blue-light: #f8eee7;
+     --blue-dark: #94618e;
+     --white-intr: #ffffff;
+     --grey-blue: #ffffff;
+     --greenish-blue: #f4decb;
+     /* --blue-light: #c8d8e4;
+     --blue-dark: #2b6777;
+     --white-intr: #ffffff;
+     --grey-blue: #f2f2f2;
+     --greenish-blue: #52ab98; */
+}
+
+/* ---------------- form section ----------------- */
+
+.login-form {
+     position: fixed;
+     width: 100vh;
+     top: 0;
+     width: 50%;
+     z-index: 1;
+     right: 0;
+     background-color: #94618e;
+     margin-right: -100%;
+     transition: all 0.5s ease;
+}
+
+.login-form form {
+     width: 50%;
+     margin: 200px auto;
+     background-color: var(--blue-light);
+     padding: 2rem;
+}
+
+.user-login button {
+     width: 30px;
+     font-size: 1.5rem;
+     border: none;
+     position: relative;
+     margin-left: 300px;
+
+     background-color: inherit;
+}
+
+form {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     font-family: "Open Sans", sans-serif;
+
+     margin: 1rem 0 0 0;
+}
+
+form label {
+     font-size: 0.9rem;
+     font-weight: 400;
+     margin: 01rem 0 0.2rem 0;
+     font-weight: 500;
+}
+
+form input:not(.profile-pic) {
+     font-family: inherit;
+     height: 2.5rem;
+     outline: none;
+     border: none;
+     border-color: white;
+     border-radius: 8px;
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+     padding-left: 4px;
+     transition: all 0.5s ease-in-out;
+}
+
+form input:not(.profile-pic):hover {
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+form .signup-btn {
+     background-color: #49274a;
+     color: white;
+}
+/* --------------- navbar ------------------ */
+
+.nav1 {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     z-index: 1;
+     padding: 1rem 1.5rem;
+     background-color: var(--grey-blue);
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     font-family: "Open Sans", sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.nav1 .language-btn {
+     font-size: 1.5rem;
+     background-color: white;
+     border: none;
+}
+
+.nav1 .in-links {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.nav1 .in-links .fa-solids {
+}
+
+.nav1 .login {
+     display: flex;
+     align-items: center;
+}
+
+.nav1 .login img {
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     margin-right: 0.5rem;
+     border: 1px solid black;
+}
+
+.nav1 .login-btn {
+     width: 70px;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     background-color: var(--greenish-blue);
+}
+
+.nav1 a {
+     font-weight: 500;
+     font-size: 1rem;
+     text-decoration: none;
+     margin: 0 5px;
+     color: var(--blue-dark);
+     margin: 0 1.5rem;
+     transition: all 0.3s ease-in;
+     width: fit-content;
+}
+
+.nav1 a:hover {
+     transform: scale(1.1);
+}
+
+/* --------------------navbar resposnive--------------- */
+
+.sub-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.post,
+.comment-section {
+     width: 50%;
+}
+
+/* ----------------------------- post section --------------- */
+
+.post {
+     background-color: var(--blue-light);
+     height: 100vh;
+     position: sticky;
+}
+
+.post-text {
+     font-family: "Nunito", sans-serif;
+     position: sticky;
+     position: -webkit-sticky;
+     text-align: center;
+     margin-top: 70px;
+
+     font-weight: 500;
+     letter-spacing: 2px;
+     text-shadow: 2px 3px 9px;
+     color: var(--blue-dark);
+     font-size: 1.2rem;
+}
+
+.post-altr {
+     background-color: aqua;
+
+     height: fit-content;
+
+     margin: auto;
+}
+
+.post .post-altr img {
+     margin: 50px 70% auto 13%;
+
+     display: block;
+
+     position: fixed;
+
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.one {
+     width: 120px;
+     left: -5%;
+     top: 310px;
+     transition: all 1s ease-in-out;
+}
+
+.two {
+     width: 230px;
+     top: 230px;
+     transition: all 1s ease-in-out;
+}
+
+.three {
+     width: 320px;
+     left: 6%;
+     transition: all 1s ease-in-out;
+}
+
+.one:hover {
+     width: 320px;
+     transform: scale(1);
+     top: 180px;
+     z-index: 1;
+}
+.one:hover ~ .two {
+     left: 6%;
+}
+.one:hover ~ .three {
+     left: 8%;
+     top: 210px;
+     transform: scale(0.4);
+     z-index: -1;
+}
+
+.two:hover {
+     transform: scale(1.5);
+     left: 2.8%;
+     top: 210px;
+}
+.two:hover ~ .three {
+     left: 10%;
+     top: 210px;
+     transform: scale(0.4);
+     z-index: -1;
+}
+
+/* ----------------- comment section ---------------------- */
+
+.comment-section {
+     background-color: var(--blue-dark);
+     font-family: "Nunito", sans-serif;
+     font-weight: 400;
+}
+/* 
+-------------------------old comments ----------------- */
+
+.old-comments {
+     background-color: var(--greenish-blue);
+     padding: 1rem;
+     border-radius: 10px 30px;
+     margin: 4rem 20% 4rem 10%;
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.1) 0px 8px 24px,
+          rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.old-comments .text {
+     font-size: 0.95rem;
+     font-weight: 300;
+     /* padding: 0.5rem 0 0 0; */
+     margin-top: 0.6rem;
+     width: 100%;
+     color: rgb(0, 0, 0);
+}
+
+.details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.details .user-img {
+     width: 1.7rem;
+     height: 1.7rem;
+     border-radius: 50%;
+}
+
+.details .name {
+     margin-left: 0.3rem;
+     font-weight: 600;
+     font-size: 1rem;
+     color: rgb(0, 0, 0);
+}
+
+.name-pic {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.verify-icon {
+     width: 0.8rem;
+     height: 0.8rem;
+     margin-left: 0.3rem;
+}
+
+.more-options-icon {
+     transition: all 0.3s ease;
+}
+
+.more-options-icon i:hover {
+     transform: scale(1.2);
+}
+
+.more-options li:hover ul.more-options-actions {
+     display: block;
+}
+
+.more-options-actions {
+     position: absolute;
+     background-color: white;
+
+     border-end-end-radius: 30px;
+     border-radius: 0 20px 20px 20px;
+
+     padding: 0.7rem;
+     margin-left: 10px;
+     display: none;
+     opacity: 0.8;
+}
+
+.more-options-actions a {
+     font-family: inherit;
+     font-size: 1rem;
+     font-weight: 400;
+     color: black;
+}
+
+.more-options-actions a:hover {
+     text-shadow: -1px 1px 1px grey;
+}
+
+.more-options-icon i {
+     margin-right: 1rem;
+}
+
+.more-options {
+     position: relative;
+}
+
+.more-options ul {
+     list-style-type: none;
+}
+
+.new-comments {
+     margin: 0rem 10% 3rem 20%;
+}
+
+/* ----------------- new added comment ---------------- */
+
+/* ---------------- new input comment ----------------------- */
+
+.new-comments textarea.noscrollbars {
+     width: 90%;
+     height: auto;
+     min-height: 4rem;
+     overflow: hidden;
+     border-radius: 10px 30px;
+     background-color: var(--grey-blue);
+     font-size: inherit;
+     font-family: inherit;
+     font-size: 0.89rem;
+     outline: none;
+     padding: 5px;
+     resize: none;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.new-comments button {
+     display: block;
+     width: max-content;
+     /* height: 1.5rem; */
+     padding: 3px;
+     border: none;
+     font-size: 0.7rem;
+     /* font-family: inherit; */
+     font-weight: 500;
+     border-radius: 10px;
+     padding: 5px;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* ---------------------- queries ----------------------- */
+
+@media screen and (max-width: 800px) {
+     .sub-container {
+          flex-direction: column;
+     }
+
+     .post,
+     .comment-section {
+          width: 100%;
+     }
+
+     .post img {
+          position: inherit;
+     }
+}

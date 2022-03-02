@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+               integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+          <link
+               href="https://fonts.googleapis.com/icon?family=Material+Icons"
+               rel="stylesheet"
+          />
+          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="style-signup-form.css" />
+          <title>signup form</title>
+     </head>
+     <body>
+          <div class="nav1">
+               <div class="language-altr">
+                    <button class="language-btn">
+                         <i class="material-icons"> g_translate </i>
+                    </button>
+               </div>
+
+               <div class="in-links">
+                    <a href="" class="home"
+                         >Home <i class="fa-solid fa-house"></i
+                    ></a>
+                    <a href="" class="blog"
+                         >Blog <i class="fa-solid fa-blog"></i
+                    ></a>
+                    <a href="" class="contact"
+                         >Contact <i class="fa-solid fa-id-badge"></i
+                    ></a>
+               </div>
+               <div class="login">
+                    <img src="user.png" alt="" />
+               </div>
+          </div>
+
+          <section class="signup-form-cont">
+               <div class="user-signup">
+                    <p class="message"></p>
+                    <form
+                         action="code.php"
+                         method="POST"
+                         enctype="multipart/form-data"
+                    >
+                         <label for="name"> Name</label>
+                         <input
+                              type="text"
+                              name="name"
+                              placeholder="Ritik Saini"
+                              required
+                         />
+                         <label for="email">Email</label>
+                         <input
+                              type="text "
+                              name="email"
+                              placeholder="abc@gmail.com"
+                              required
+                         />
+                         <label for="password">Password</label>
+                         <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              placeholder="******"
+                         />
+
+                         <label for="profession">Profession</label>
+                         <input
+                              type="text"
+                              name="profession"
+                              placeholder="your profession"
+                         />
+
+                         <label for="profile-pic">Profile picute</label>
+                         <input
+                              class="profile-pic"
+                              type="file"
+                              name="profilepic"
+                              accept="image/png, image/jpeg"
+                              id="profile-pic"
+                         />
+                         <br />
+                         <input
+                              class="signup-btn"
+                              type="submit"
+                              name="signup-btn"
+                              value="sign up"
+                         />
+                    </form>
+               </div>
+          </section>
+     </body>
+</html>
