@@ -23,17 +23,23 @@ a {
 }
 
 :root {
-   --blue-light: #f8eee7;
+   /* --blue-light: #f8eee7;
    --blue-dark: #c59b76;
    --white-intr: #ffffff;
    --grey-blue: #ffffff;
    --greenish-blue: #f4decb;
-   --nav-txt-clr: #48321e;
+   --nav-txt-clr: #48321e; */
    /* --blue-light: #c8d8e4;
      --blue-dark: #2b6777;
      --white-intr: #ffffff;
      --grey-blue: #f2f2f2;
      --greenish-blue: #52ab98; */
+   --blue-light: #ddeef5;
+   --blue-dark: #3588a3;
+   --white-intr: #ffffff;
+   --grey-blue: #ffffff;
+   --greenish-blue: #f4decb;
+   --nav-txt-clr: #48321e;
 }
 
 /* ---------------- form section ----------------- */
@@ -117,7 +123,7 @@ form .signup-btn {
    position: sticky;
    top: 0;
    font-family: "Open Sans", sans-serif;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.03) 0px 3px 6px;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .nav1 .language-btn {
@@ -186,7 +192,7 @@ form .signup-btn {
 /* ----------------------------- post section --------------- */
 
 .post {
-   background-color: var(--blue-light);
+   background-color: #c8ded2;
    height: 100vh;
    position: sticky;
 }
@@ -202,7 +208,7 @@ form .signup-btn {
    letter-spacing: 2px;
    text-shadow: 2px 3px 9px;
    color: var(--blue-dark);
-   font-size: 1.2rem;
+   font-size: 1rem;
 }
 
 .post-altr {
@@ -218,7 +224,7 @@ form .signup-btn {
 }
 
 .one {
-   width: 400px;
+   width: 350px;
    display: block;
    margin: 2rem auto;
 }

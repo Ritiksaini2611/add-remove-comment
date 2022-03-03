@@ -1,227 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-               name="viewport"
-               content="width=device-width, initial-scale=1.0"
-          />
-          <link
-               rel="stylesheet"
-               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-               integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-               crossorigin="anonymous"
-               referrerpolicy="no-referrer"
-          />
-          <link
-               href="https://fonts.googleapis.com/icon?family=Material+Icons"
-               rel="stylesheet"
-          />
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link
+         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet"
+      />
 
-          <link rel="stylesheet" href="style.css" />
-          <title>Document</title>
-     </head>
-     <body>
-          <div class="main-container">
-               <div class="login-form">
-                    <form class="user-login" action="">
-                         <button onclick="closeLogin()">
-                              <i class="fa-solid fa-xmark"></i>
-                         </button>
-                         <label for="email">Email</label>
-                         <input
-                              type="text "
-                              name="email"
-                              placeholder="abc@gmail.com"
-                              required
-                         />
-                         <label for="password">Password</label>
-                         <input
-                              type="password"
-                              name="password"
-                              id="password"
-                              placeholder="******"
-                         />
-                         <br />
-                         <input
-                              class="signup-btn"
-                              type="submit"
-                              name="signup-btn"
-                              value="Login"
-                         />
-                         <br />
-                         <a
-                              href="signup.html"
-                              target="_self"
-                              onclick="signupForm()"
-                              ><label for="sign up">sign-up</label></a
-                         >
-                    </form>
-               </div>
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="main-container">
+         <div class="login-form">
+            <form class="user-login" action="">
+               <button onclick="closeLogin()">
+                  <i class="fa-solid fa-xmark"></i>
+               </button>
+               <label for="email">Email</label>
+               <input
+                  type="text "
+                  name="email"
+                  placeholder="abc@gmail.com"
+                  required
+               />
+               <label for="password">Password</label>
+               <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="******"
+               />
+               <br />
+               <input
+                  class="signup-btn"
+                  type="submit"
+                  name="signup-btn"
+                  value="Login"
+               />
+               <br />
+               <a href="signup.html" target="_self" onclick="signupForm()"
+                  ><label for="sign up">sign-up</label></a
+               >
+            </form>
+         </div>
 
-               <div class="nav1">
-                    <div class="language-altr">
-                         <button class="language-btn">
-                              <i class="material-icons"> g_translate </i>
-                         </button>
-                    </div>
+         <div class="nav1">
+            <div class="language-altr">
+               <button class="language-btn">
+                  <i class="material-icons"> g_translate </i>
+               </button>
+            </div>
 
-                    <div class="in-links">
-                         <a href="" class="home"
-                              >Home <i class="fa-solid fa-house"></i
-                         ></a>
-                         <a href="" class="blog"
-                              >Blog <i class="fa-solid fa-blog"></i
-                         ></a>
-                         <a href="" class="contact"
-                              >Contact <i class="fa-solid fa-id-badge"></i
-                         ></a>
-                    </div>
-                    <div class="login">
-                         <img src="user.png" alt="" />
-                         <button
-                              class="login-btn"
-                              id="login-btn"
-                              onclick="loginForm()"
-                         >
-                              Login
-                         </button>
-                    </div>
-               </div>
+            <div class="in-links">
+               <a href="" class="home"
+                  >Home <i class="fa-solid fa-house"></i
+               ></a>
+               <a href="" class="blog">Blog <i class="fa-solid fa-blog"></i></a>
+               <a href="" class="contact"
+                  >Contact <i class="fa-solid fa-id-badge"></i
+               ></a>
+            </div>
+            <div class="login">
+               <img src="user.png" alt="" />
+               <button class="login-btn" id="login-btn" onclick="loginForm()">
+                  Login
+               </button>
+            </div>
+         </div>
 
-               <!-- ------------------ navbar-responsive------------------ -->
+         <!-- ------------------ navbar-responsive------------------ -->
 
-               <div class="nav2"></div>
+         <div class="nav2"></div>
 
-               <!-- -----------------comment/post-section--------------- -->
+         <!-- -----------------comment/post-section--------------- -->
 
-               <div class="sub-container">
-                    <div class="post">
-                         <h2 class="post-text">Featured ones</h2>
+         <div class="sub-container">
+            <div class="post">
+               <h2 class="post-text">Featured ones</h2>
 
-                         <div class="post-altr">
-                              <img
-                                   src="camp1.png"
-                                   alt=""
-                                   class="post-img one"
-                              />
-                              <!-- <img src="camp2.png" alt="" class="two" />
+               <div class="post-altr">
+                  <img src="camp3.png" alt="" class="post-img one" />
+                  <!-- <img src="camp2.png" alt="" class="two" />
                               <img src="camp3.png" class="three" alt="" /> -->
-                         </div>
-                    </div>
-                    <div class="comment-section">
-                         <!-- comment -->
-                         <div class="old-comments">
-                              <div class="details">
-                                   <div class="name-pic">
-                                        <img
-                                             class="user-img"
-                                             src="img1.jpg"
-                                             alt=""
-                                        />
-                                        <p class="name">Alex Grand</p>
-                                        <img
-                                             class="verify-icon"
-                                             src="verify.png"
-                                             alt=""
-                                        />
-                                   </div>
-                                   <div class="more-options">
-                                        <ul>
-                                             <li class="more-options-icon">
-                                                  <i
-                                                       id="clicks"
-                                                       class="fa-solid fa-ellipsis-vertical clicks"
-                                                  ></i>
-
-                                                  <ul
-                                                       class="more-options-actions"
-                                                  >
-                                                       <li class="reply">
-                                                            <a href="">Reply</a>
-                                                       </li>
-                                                       <li class="delete">
-                                                            <a href=""
-                                                                 >Delete</a
-                                                            >
-                                                       </li>
-                                                  </ul>
-                                             </li>
-                                        </ul>
-                                   </div>
-                              </div>
-
-                              <p class="text">
-                                   Lorem ipsum dolor sit amet consectetur
-                                   adipisicing elit. Unde nobis fugiat ipsam
-                                   odio enim. Aut adipisci perspiciatis
-                                   asperiores sint rerum sequi?
-                              </p>
-                         </div>
-
-                         <div class="old-comments">
-                              <div class="details">
-                                   <div class="name-pic">
-                                        <img
-                                             class="user-img"
-                                             src="img1.jpg"
-                                             alt=""
-                                        />
-                                        <p class="name">Alex Grand</p>
-                                        <img
-                                             class="verify-icon"
-                                             src="verify.png"
-                                             alt=""
-                                        />
-                                   </div>
-                                   <div class="more-options">
-                                        <ul>
-                                             <li class="more-options-icon">
-                                                  <i
-                                                       id="clicks"
-                                                       class="fa-solid fa-ellipsis-vertical clicks"
-                                                  ></i>
-
-                                                  <ul
-                                                       class="more-options-actions"
-                                                  >
-                                                       <li class="reply">
-                                                            <a href="">Reply</a>
-                                                       </li>
-                                                       <li class="delete">
-                                                            <a href=""
-                                                                 >Delete</a
-                                                            >
-                                                       </li>
-                                                  </ul>
-                                             </li>
-                                        </ul>
-                                   </div>
-                              </div>
-
-                              <p class="text">
-                                   Lorem ipsum dolor sit amet consectetur
-                                   adipisicing elit. Unde nobis fugiat ipsam
-                                   odio enim. Aut adipisci perspiciatis
-                                   asperiores sint rerum sequi?
-                              </p>
-                         </div>
-
-                         <div class="new-comments">
-                              <textarea
-                                   id="comment"
-                                   name="comment"
-                                   placeholder="Write something.."
-                                   class="noscrollbars input-cmnt"
-                                   onkeyup="autoGrow(this);"
-                              ></textarea>
-                              <button class="add-button">Comment</button>
-                         </div>
-                    </div>
                </div>
-          </div>
+            </div>
+            <div class="comment-section">
+               <!-- comment -->
+               <div class="old-comments">
+                  <div class="details">
+                     <div class="name-pic">
+                        <img class="user-img" src="img1.jpg" alt="" />
+                        <p class="name">Alex Grand</p>
+                        <img class="verify-icon" src="verify.png" alt="" />
+                     </div>
+                     <div class="more-options">
+                        <ul>
+                           <li class="more-options-icon">
+                              <i
+                                 id="clicks"
+                                 class="fa-solid fa-ellipsis-vertical clicks"
+                              ></i>
 
-          <script src="function.js"></script>
-     </body>
+                              <ul class="more-options-actions">
+                                 <li class="reply">
+                                    <a href="">Reply</a>
+                                 </li>
+                                 <li class="delete">
+                                    <a href="">Delete</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <p class="text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Unde nobis fugiat ipsam odio enim. Aut adipisci
+                     perspiciatis asperiores sint rerum sequi?
+                  </p>
+               </div>
+
+               <div class="old-comments">
+                  <div class="details">
+                     <div class="name-pic">
+                        <img class="user-img" src="img1.jpg" alt="" />
+                        <p class="name">Alex Grand</p>
+                        <img class="verify-icon" src="verify.png" alt="" />
+                     </div>
+                     <div class="more-options">
+                        <ul>
+                           <li class="more-options-icon">
+                              <i
+                                 id="clicks"
+                                 class="fa-solid fa-ellipsis-vertical clicks"
+                              ></i>
+
+                              <ul class="more-options-actions">
+                                 <li class="reply">
+                                    <a href="">Reply</a>
+                                 </li>
+                                 <li class="delete">
+                                    <a href="">Delete</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <p class="text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Unde nobis fugiat ipsam odio enim. Aut adipisci
+                     perspiciatis asperiores sint rerum sequi?
+                  </p>
+               </div>
+
+               <div class="new-comments">
+                  <textarea
+                     id="comment"
+                     name="comment"
+                     placeholder="Write something.."
+                     class="noscrollbars input-cmnt"
+                     onkeyup="autoGrow(this);"
+                  ></textarea>
+                  <button class="add-button">Comment</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="function.js"></script>
+   </body>
 </html>
