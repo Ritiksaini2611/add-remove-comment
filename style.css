@@ -37,7 +37,7 @@ a {
    --blue-light: #ddeef5;
    --blue-dark: #3588a3;
    --white-intr: #ffffff;
-   --grey-blue: #ffffff;
+   --grey: #315266;
    --greenish-blue: #f4decb;
    --nav-txt-clr: #48321e;
 }
@@ -51,7 +51,7 @@ a {
    width: 50%;
    z-index: 1;
    right: 0;
-   background-color: #94618e;
+   background-color: var(--blue-dark);
    margin-right: -100%;
    transition: all 0.5s ease;
 }
@@ -117,10 +117,10 @@ form .signup-btn {
    justify-content: space-between;
    width: 100%;
    z-index: 1;
-   padding: 1rem 1.5rem;
-   background-color: var(--grey-blue);
-   position: -webkit-sticky;
-   position: sticky;
+   padding: 1.5rem 1.5rem;
+   background-color: var(--grey);
+   /* position: -webkit-sticky; */
+   position: relative;
    top: 0;
    font-family: "Open Sans", sans-serif;
    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -163,11 +163,11 @@ form .signup-btn {
 }
 
 .nav1 a {
-   font-weight: 500;
-   font-size: 1.02rem;
+   font-weight: 300;
+   font-size: 1.12rem;
    text-decoration: none;
    margin: 0 5px;
-   color: var(--nav-txt-clr);
+   color: white;
    margin: 0 1.5rem;
    transition: all 0.3s ease-in;
    width: fit-content;
@@ -240,10 +240,10 @@ form .signup-btn {
 -------------------------old comments ----------------- */
 
 .old-comments {
-   background-color: var(--greenish-blue);
-   padding: 1rem;
+   background-color: var(--blue-light);
+   padding: 1.3rem 1.5rem;
    border-radius: 10px 30px;
-   margin: 4rem 20% 4rem 10%;
+   margin: 4rem 30% 4rem 10%;
    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -251,9 +251,9 @@ form .signup-btn {
 .old-comments .text {
    font-size: 0.95rem;
    font-weight: 300;
-   /* padding: 0.5rem 0 0 0; */
+   padding: 0.5rem 0;
    margin-top: 0.6rem;
-   width: 100%;
+   width: 90%;
    color: rgb(0, 0, 0);
 }
 
@@ -267,13 +267,15 @@ form .signup-btn {
    width: 1.7rem;
    height: 1.7rem;
    border-radius: 50%;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .details .name {
    margin-left: 0.3rem;
-   font-weight: 600;
-   font-size: 1rem;
-   color: rgb(0, 0, 0);
+   font-weight: 500;
+   font-size: 0.97rem;
+   color: var(--nav-txt-clr);
 }
 
 .name-pic {
@@ -345,19 +347,19 @@ form .signup-btn {
 /* ---------------- new input comment ----------------------- */
 
 .new-comments textarea.noscrollbars {
-   width: 90%;
+   width: 80%;
    height: auto;
    min-height: 4rem;
    overflow: hidden;
-   border-radius: 10px 30px;
-   background-color: var(--grey-blue);
+   border-radius: 10px;
+   background-color: var(--white-intr);
    font-size: inherit;
    font-family: inherit;
    font-size: 0.89rem;
    outline: none;
-   padding: 5px;
+   padding: 1rem;
    resize: none;
-   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .new-comments button {
