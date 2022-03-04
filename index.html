@@ -96,39 +96,53 @@
             </div>
             <div class="comment-section">
                <!-- comment -->
-               <div class="old-comments">
-                  <div class="details">
-                     <div class="name-pic">
-                        <img class="user-img" src="img1.jpg" alt="" />
-                        <p class="name">Alex Grand</p>
-                        <img class="verify-icon" src="verify.png" alt="" />
-                     </div>
-                     <div class="more-options">
-                        <ul>
-                           <li class="more-options-icon">
-                              <i
-                                 id="clicks"
-                                 class="fa-solid fa-ellipsis-vertical clicks"
-                              ></i>
 
-                              <ul class="more-options-actions">
-                                 <li class="reply">
-                                    <a href="">Reply</a>
-                                 </li>
-                                 <li class="delete">
-                                    <a href="">Delete</a>
-                                 </li>
-                              </ul>
-                           </li>
-                        </ul>
+               <div class="old-cmnt-new-reply">
+                  <div class="old-comments">
+                     <div class="details">
+                        <div class="name-pic">
+                           <img class="user-img" src="img1.jpg" alt="" />
+                           <p class="name">Alex Grand</p>
+                           <img class="verify-icon" src="verify.png" alt="" />
+                        </div>
+                        <div class="more-options">
+                           <ul>
+                              <li class="more-options-icon">
+                                 <i
+                                    id="clicks"
+                                    class="fa-solid fa-ellipsis-vertical clicks"
+                                 ></i>
+
+                                 <ul class="more-options-actions">
+                                    <li class="reply">
+                                       <a href="" onclick="reply()">Reply</a>
+                                    </li>
+                                    <li class="delete">
+                                       <a href="">Delete</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
                      </div>
+
+                     <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde nobis fugiat ipsam odio enim. Aut adipisci
+                        perspiciatis asperiores sint rerum sequi?
+                     </p>
                   </div>
 
-                  <p class="text">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Unde nobis fugiat ipsam odio enim. Aut adipisci
-                     perspiciatis asperiores sint rerum sequi?
-                  </p>
+                  <div class="reply new-comments show-hidden">
+                     <textarea
+                        id="comment"
+                        name="comment"
+                        placeholder="Write something.."
+                        class="noscrollbars input-cmnt"
+                        onkeyup="autoGrow(this);"
+                     ></textarea>
+                     <button class="add-button">Reply</button>
+                  </div>
                </div>
 
                <div class="old-comments">

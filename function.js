@@ -52,3 +52,9 @@ function signupForm() {
    document.querySelector(".user-signup").style.display = "block";
    document.querySelector(".login-form").style.marginRight = "initial";
 }
+
+//replying on the comment of a user that already exists and registered
+
+function reply() {
+   document.querySelector(".reply").classList.remove("show-hidden");
+}
