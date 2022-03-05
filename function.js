@@ -56,5 +56,6 @@ function signupForm() {
 //replying on the comment of a user that already exists and registered
 
 function reply() {
-   document.querySelector(".reply").classList.remove("show-hidden");
+   document.querySelector(".reply1").classList.add("show");
+   document.querySelector(".more-options-actions").style.display = "none";
 }

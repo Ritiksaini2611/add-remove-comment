@@ -21,6 +21,13 @@ a {
 .show-hidden {
    display: none;
 }
+.reply1 {
+   display: none;
+}
+
+.show {
+   display: block;
+}
 
 :root {
    /* --blue-light: #f8eee7;
