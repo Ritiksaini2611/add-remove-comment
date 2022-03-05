@@ -39,6 +39,7 @@ function cmntReply() {
 
          let node = document.querySelector(".details");
          let clone = node.cloneNode(true);
+
          div.appendChild(clone);
 
          //     let text = document.createTextNode("CreateElement example");
