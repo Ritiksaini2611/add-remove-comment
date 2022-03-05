@@ -37,10 +37,15 @@ function cmntReply() {
          mains.appendChild(div);
          div.className = "same-prop-new-cmnt";
 
-         let text = document.createTextNode("CreateElement example");
-         div.appendChild(text);
+         let node = document.querySelector(".details");
+         let clone = node.cloneNode(true);
+         div.appendChild(clone);
 
-         let h2 = document.createElement("h2");
+         //     let text = document.createTextNode("CreateElement example");
+         //     div.appendChild(text);
+
+         let h2 = document.createElement("p");
+         h2.className = "text";
          h2.textContent = y.value;
          div.appendChild(h2);
          y.value = "";

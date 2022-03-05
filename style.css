@@ -265,7 +265,11 @@ form .signup-btn {
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.old-comments .text {
+.same-prop-new-cmnt {
+   background-color: #7fa5d6;
+}
+
+.text {
    font-size: 0.95rem;
    font-weight: 300;
    padding: 0.5rem 0;
