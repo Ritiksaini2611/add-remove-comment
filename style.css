@@ -14,6 +14,11 @@ body {
    line-height: 1.6;
 }
 
+hr {
+   width: 80%;
+   margin: auto;
+}
+
 a {
    text-decoration: none;
 }
@@ -250,7 +255,8 @@ form .signup-btn {
 /* 
 -------------------------old comments ----------------- */
 
-.old-comments {
+.old-comments,
+.same-prop-new-cmnt {
    background-color: var(--blue-light);
    padding: 1.2rem 1.5rem;
    border-radius: 10px 30px;
@@ -380,11 +386,15 @@ form .signup-btn {
    padding: 5px;
    border: none;
    font-size: 0.7rem;
-
+   margin: 0 5px;
    font-weight: 500;
    border-radius: 5px;
 
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cancel-reply button {
+   float: left;
 }
 
 /* ---------------------- queries ----------------------- */

@@ -115,7 +115,7 @@
 
                                  <ul class="more-options-actions">
                                     <li class="reply">
-                                       <a href="" onclick="reply()">Reply</a>
+                                       <a href="#" onclick="reply()">Reply</a>
                                     </li>
                                     <li class="delete">
                                        <a href="">Delete</a>
@@ -138,12 +138,21 @@
                         id="comment"
                         name="comment"
                         placeholder="Write something.."
-                        class="noscrollbars input-cmnt"
+                        class="noscrollbars"
                         onkeyup="autoGrow(this);"
                      ></textarea>
-                     <button class="add-button">Reply</button>
+                     <div class="cancel-reply">
+                        <button class="reply-button" onclick="cmntReply()">
+                           Reply
+                        </button>
+                        <button class="cancel-button" onclick="cancel()">
+                           Cancel
+                        </button>
+                     </div>
                   </div>
                </div>
+
+               <hr />
 
                <div class="old-comments">
                   <div class="details">
@@ -180,6 +189,8 @@
                   </p>
                </div>
 
+               <hr />
+
                <div class="old-comments">
                   <div class="details">
                      <div class="name-pic">
@@ -214,6 +225,8 @@
                      perspiciatis asperiores sint rerum sequi?
                   </p>
                </div>
+
+               <hr />
 
                <div class="old-comments">
                   <div class="details">
@@ -250,6 +263,8 @@
                   </p>
                </div>
 
+               <div class="your-comment"></div>
+
                <div class="new-comments">
                   <textarea
                      id="comment"
@@ -258,7 +273,9 @@
                      class="noscrollbars input-cmnt"
                      onkeyup="autoGrow(this);"
                   ></textarea>
-                  <button class="add-button">Comment</button>
+                  <button class="add-button" onclick="cmntReply()">
+                     Comment
+                  </button>
                </div>
             </div>
          </div>

@@ -1,15 +1,16 @@
 "use strict";
 
-var loggedin = false;
+var loggedin = true;
+let mains = document.querySelector(".your-comment");
 
 // ------------ more options toogle functionality  --------------------------
 
-document
-   .querySelector(".more-options-icon")
-   .addEventListener("click", function () {
-      console.log(22);
-      document.querySelector(".more-options-actions").style.display = "block";
-   });
+// document
+//    .querySelector(".more-options-icon")
+//    .addEventListener("click", function () {
+//       console.log(22);
+//       document.querySelector(".more-options-actions").style.display = "block";
+//    });
 
 //---------- for adjustment of fieldarea----------------
 
@@ -21,7 +22,7 @@ function autoGrow(oField) {
    }
 }
 
-document.querySelector(".add-button").addEventListener("click", function () {
+function cmntReply() {
    var newCmnt = document.querySelector(".input-cmnt").value;
 
    if (!newCmnt) {
@@ -30,13 +31,22 @@ document.querySelector(".add-button").addEventListener("click", function () {
       if (!loggedin) {
          alert("you have to login to make a comment");
       } else {
-         var nowOldCmnt = newCmnt;
-         console.log(nowOldCmnt);
+         let div = document.createElement("div");
+         let y = document.querySelector(".input-cmnt");
 
-         document.querySelector(".input-cmnt").value = "";
+         mains.appendChild(div);
+         div.className = "same-prop-new-cmnt";
+
+         let text = document.createTextNode("CreateElement example");
+         div.appendChild(text);
+
+         let h2 = document.createElement("h2");
+         h2.textContent = y.value;
+         div.appendChild(h2);
+         y.value = "";
       }
    }
-});
+}
 
 //------------------- login form onclick opening function ----------------------
 
@@ -57,5 +67,9 @@ function signupForm() {
 
 function reply() {
    document.querySelector(".reply1").classList.add("show");
-   document.querySelector(".more-options-actions").style.display = "none";
 }
+function cancel() {
+   document.querySelector(".reply1").classList.remove("show");
+}
+
+//you writing a new comment and deleting
