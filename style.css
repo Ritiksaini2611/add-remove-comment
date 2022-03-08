@@ -193,6 +193,42 @@ form .signup-btn {
    transform: scale(1.1);
 }
 
+/* ----------------- nav altr -------------------------- */
+
+.nav1-altr {
+   flex-direction: column;
+   display: none;
+   width: 70px;
+   justify-content: space-between;
+   position: fixed;
+   align-items: center;
+   height: 100vh;
+}
+.nav1-altr .in-links {
+   flex-direction: column;
+
+   justify-content: space-between;
+}
+
+.nav1-altr .login {
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.nav1-altr a {
+   margin: 1rem 0;
+}
+
+.nav1-altr .login img {
+   margin-right: 0;
+   margin-bottom: 0.5rem;
+}
+.nav1-altr .login-btn {
+   width: 40px;
+   background-color: white;
+   height: 1.5rem;
+}
+
 /* --------------------navbar resposnive--------------- */
 
 .sub-container {
