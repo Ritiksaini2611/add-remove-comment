@@ -79,3 +79,31 @@ function cancel() {
 }
 
 //you writing a new comment and deleting
+
+// on scroll action - nav1 dispr - nav1-altr displayed
+
+var sticky = 2;
+var navaltr = document.querySelector(".nav1-altr");
+var nav1 = document.querySelector(".disp");
+
+function myFunction() {
+   if (window.scrollY >= sticky) {
+      nav1.style.display = "none";
+      navaltr.style.display = "flex";
+   } else {
+      nav1.style.display = "flex";
+      navaltr.style.display = "none";
+   }
+}
+
+function openFullscreen() {
+   if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+   } else if (elem.webkitRequestFullscreen) {
+      /* Safari */
+      elem.webkitRequestFullscreen();
+   } else if (elem.msRequestFullscreen) {
+      /* IE11 */
+      elem.msRequestFullscreen();
+   }
+}
